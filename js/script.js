@@ -25,7 +25,7 @@ function enterClicked() {
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-template/sw.js", {
+    scope: "/ICS2O-template/",
   })
 }
