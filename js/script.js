@@ -5,6 +5,16 @@
 // This file contains the JS functions for index.html
 
 "use strict"
+
+/**
+ * Check servie worker.
+ */
+ if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-template/sw.js", {
+    scope: "/ICS2O-template/",
+  })
+}
+
 /**
  * This function calculates area of triangle.
  */
@@ -21,11 +31,4 @@ function enterClicked() {
     "the area of the triangle is: " + area + " cm²."
 }
 
-/**
- * Check servie worker.
- */
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-template/sw.js", {
-    scope: "/ICS2O-template/",
-  })
-}
+
