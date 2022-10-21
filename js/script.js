@@ -9,7 +9,7 @@
 /**
  * Check servie worker.
  */
- if (navigator.serviceWorker) {
+if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-template/sw.js", {
     scope: "/ICS2O-template/",
   })
@@ -30,5 +30,3 @@ function enterClicked() {
   document.getElementById("area-of-triangle").innerHTML =
     "the area of the triangle is: " + area + " cm²."
 }
-
-
